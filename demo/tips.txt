@@ -1,0 +1,32 @@
+1.
+ Math.min.apply(null,arry); //null,表示this,arry表示元素,数学方法获取数组最小值
+
+2.举一反三
+arry.sort();//给数组排序，不按字符串长度，按大小，数字优先字母。
+
+3.
+Math.floor();给一个数向下取整；
+
+4.取滚动条滚动距离：
+scrollTop = document.body.scrollTop //谷歌浏览器
+scrollTop = document.documentElement.scrollTop //IE等
+
+5.当前浏览器页面可视高度
+
+clientHeight = document.body.clientHeight //谷歌
+clientHeight = documetn.documentElement.clientHeight //IE等
+
+6.创建元素，增加元素
+
+document.createElement('element');
+parent.appendChild(eleO);
+
+7.疑惑！！
+
+window.onload下，加载了waterfall函数后，调用其它函数，无法使用. //waterfall报错
+
+解决所在！
+
+for循环里，写的i<=imgs.legnth,这样导致多遍历了一个i imgs元素，最后一个未找到，所以报错。
+
+//细心！！索引为0开始，长度length为1开始，所以写 < 就可以！！！
